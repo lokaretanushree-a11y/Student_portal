@@ -1,0 +1,6 @@
+{
+  "name": "Student Portal - College Management System",
+  "description": "Complete Java Servlet, JSP, DAO & SQL College Student Management Portal with interactive live preview and source code architecture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

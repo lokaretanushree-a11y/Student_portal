@@ -1,0 +1,113 @@
+import { Student, AttendanceRecord, MarkRecord, Notice } from '../types/portal';
+
+export const INITIAL_STUDENTS: Student[] = [
+  {
+    id: 1,
+    rollNo: 'CS202401',
+    name: 'Aarav Sharma',
+    className: 'CS - Year 3',
+    email: 'aarav.sharma@college.edu'
+  },
+  {
+    id: 2,
+    rollNo: 'CS202402',
+    name: 'Priya Patel',
+    className: 'CS - Year 3',
+    email: 'priya.patel@college.edu'
+  },
+  {
+    id: 3,
+    rollNo: 'IT202415',
+    name: 'Rohan Verma',
+    className: 'IT - Year 2',
+    email: 'rohan.verma@college.edu'
+  },
+  {
+    id: 4,
+    rollNo: 'CS202444',
+    name: 'Ananya Iyer',
+    className: 'CS - Year 4',
+    email: 'ananya.iyer@college.edu'
+  },
+  {
+    id: 5,
+    rollNo: 'EC202409',
+    name: 'Devansh Kulkarni',
+    className: 'ECE - Year 2',
+    email: 'devansh.k@college.edu'
+  },
+  {
+    id: 6,
+    rollNo: 'CS202452',
+    name: 'Tanvi Deshmukh',
+    className: 'CS - Year 3',
+    email: 'tanvi.deshmukh@college.edu'
+  }
+];
+
+export const INITIAL_ATTENDANCE: AttendanceRecord[] = [
+  { id: 1, rollNo: 'CS202401', studentName: 'Aarav Sharma', subject: 'Database Management Systems', date: '2026-10-09', status: 'PRESENT' },
+  { id: 2, rollNo: 'CS202401', studentName: 'Aarav Sharma', subject: 'Operating Systems', date: '2026-10-09', status: 'PRESENT' },
+  { id: 3, rollNo: 'CS202401', studentName: 'Aarav Sharma', subject: 'Computer Networks', date: '2026-10-08', status: 'LATE' },
+  { id: 4, rollNo: 'CS202402', studentName: 'Priya Patel', subject: 'Database Management Systems', date: '2026-10-09', status: 'PRESENT' },
+  { id: 5, rollNo: 'CS202402', studentName: 'Priya Patel', subject: 'Software Engineering', date: '2026-10-08', status: 'PRESENT' },
+  { id: 6, rollNo: 'IT202415', studentName: 'Rohan Verma', subject: 'Data Structures & Algorithms', date: '2026-10-09', status: 'ABSENT' },
+  { id: 7, rollNo: 'CS202444', studentName: 'Ananya Iyer', subject: 'Cloud Computing', date: '2026-10-09', status: 'PRESENT' }
+];
+
+export const INITIAL_MARKS: MarkRecord[] = [
+  { id: 1, rollNo: 'CS202401', studentName: 'Aarav Sharma', subject: 'Database Management Systems', marksObtained: 88, maxMarks: 100 },
+  { id: 2, rollNo: 'CS202401', studentName: 'Aarav Sharma', subject: 'Operating Systems', marksObtained: 92, maxMarks: 100 },
+  { id: 3, rollNo: 'CS202401', studentName: 'Aarav Sharma', subject: 'Computer Networks', marksObtained: 84, maxMarks: 100 },
+  { id: 4, rollNo: 'CS202402', studentName: 'Priya Patel', subject: 'Database Management Systems', marksObtained: 95, maxMarks: 100 },
+  { id: 5, rollNo: 'CS202402', studentName: 'Priya Patel', subject: 'Software Engineering', marksObtained: 91, maxMarks: 100 },
+  { id: 6, rollNo: 'IT202415', studentName: 'Rohan Verma', subject: 'Data Structures & Algorithms', marksObtained: 78, maxMarks: 100 },
+  { id: 7, rollNo: 'CS202444', studentName: 'Ananya Iyer', subject: 'Cloud Computing', marksObtained: 96, maxMarks: 100 }
+];
+
+export const INITIAL_NOTICES: Notice[] = [
+  {
+    id: 1,
+    title: 'Mid-Semester Examination Schedule',
+    message: 'The Mid-Semester exams for Years 2, 3 and 4 commence on October 25th. Download timetable from student portal or review department boards.',
+    date: '2026-10-12',
+    postedBy: 'Academic Controller',
+    priority: 'HIGH'
+  },
+  {
+    id: 2,
+    title: 'Annual Campus Hackathon 2026 Registration Open',
+    message: 'Register your teams of 3-4 for the 24-hour inter-college Hackathon with ₹1,00,000 in grand prize pool. Submissions close October 18.',
+    date: '2026-10-15',
+    postedBy: 'CS & IT Dept',
+    priority: 'NORMAL'
+  },
+  {
+    id: 3,
+    title: 'Mandatory 75% Attendance Compliance Notice',
+    message: 'All students are reminded that a minimum of 75% overall attendance is mandatory to appear for university end-semester examinations.',
+    date: '2026-10-05',
+    postedBy: 'Dean of Student Affairs',
+    priority: 'HIGH'
+  }
+];
+
+export const AVAILABLE_SUBJECTS = [
+  'Database Management Systems',
+  'Operating Systems',
+  'Computer Networks',
+  'Data Structures & Algorithms',
+  'Software Engineering',
+  'Cloud Computing',
+  'Web Development & Servlets'
+];
+
+export const AVAILABLE_CLASSES = [
+  'CS - Year 1',
+  'CS - Year 2',
+  'CS - Year 3',
+  'CS - Year 4',
+  'IT - Year 2',
+  'IT - Year 3',
+  'ECE - Year 2'
+];
